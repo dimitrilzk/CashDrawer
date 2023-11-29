@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Data;
 
 namespace CashDrawer.Pages
 {
@@ -13,8 +14,8 @@ namespace CashDrawer.Pages
         }
 
         public void OnGet()
-        {
-
+        {            
+            
         }
     }
 }
