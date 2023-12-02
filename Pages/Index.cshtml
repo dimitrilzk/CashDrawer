@@ -6,5 +6,11 @@
 
 <h1>Pronoto per iniziare?</h1>
 <p>Inserisci l'anno del tuo Cash Drawer</p>
-<input type="text" value="" />
-<button>Crea la tua tabella</button>
+<input id="anno" type="text" value="" />
+<button id="createTable">Crea la tua tabella</button>
+
+<div id="tabella-container"></div>
+
+@section scripts{
+    <script src="/js/table.js" asp-append-version="true"></script>
+}
