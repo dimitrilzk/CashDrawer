@@ -1,4 +1,6 @@
 ﻿@page
+@using CashDrawer.Models.Entities
+@using CashDrawer.Models.Enums
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -9,7 +11,16 @@
 <input id="anno" type="text" value="" />
 <button id="createTable">Crea la tua tabella</button>
 
-<div id="tabella-container"></div>
+<div id="tabella-container">
+    <table class="table table-hover mt-5">
+        <tr>
+            @foreach (var thead in typeof(CashTable).GetProperties())
+            {
+                <th>@thead.Name</th>
+            }                
+        </tr>
+    </table>
+</div>
 
 @section scripts{
     <script src="/js/table.js" asp-append-version="true"></script>
