@@ -30,7 +30,7 @@ namespace CashDrawer.Models.Entities
 
         [Required]
         public string Anno { get; set; }
-        public TableRows Mesi { get; set; }
+        public Mesi Mesi { get; set; }
 
         [Range(0, float.MaxValue)]
         [DataType(DataType.Currency)]

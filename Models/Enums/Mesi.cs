@@ -1,6 +1,6 @@
 ﻿namespace CashDrawer.Models.Enums
 {
-    public enum TableRows
+    public enum Mesi
     {
         Gennaio,
         Febbraio,

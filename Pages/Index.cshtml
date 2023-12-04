@@ -14,9 +14,9 @@
 <div id="tabella-container">
     <table class="table table-hover mt-5">
         <tr>
-            @foreach (var thead in typeof(CashTable).GetProperties())
+            @foreach (var row in Model.tableRows)
             {
-                <th>@thead.Name</th>
+                <th>@row.Mese</th>
             }                
         </tr>
     </table>
