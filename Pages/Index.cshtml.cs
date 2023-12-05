@@ -14,7 +14,7 @@ namespace CashDrawer.Pages
         {
             _logger = logger;
         }
-
+        public TableHeader TableHeader { get; set; }
         public List<TableRow> tableRows { get; set; }
 
         public void OnGet()

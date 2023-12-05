@@ -18,7 +18,6 @@ namespace CashDrawer.Models.Entities
         public float SpeseAnnuali { get; set; }
         public float UsciteExtra { get; set; }
         public float Rimanenza { get; set; }
-
     }
 }
     
